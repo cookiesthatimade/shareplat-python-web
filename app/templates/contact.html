@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="static/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>쉐어플랫(SHARE PLAT)</title>
+    <link rel="stylesheet" href="static/css/contact.css" />
+    <link rel="stylesheet" href="static/css/nav.css" />
+    <!-- 웹 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="headerContainer">
+      <div class="headerWrapper">
+        <div class="logo">
+          <label>
+            <a href="/" class="underlineNone" id="case0">
+              <img
+                src="{{ url_for('static', filename='img/logo.png') }}"
+                alt="로고이미지"
+                onclick="GetClick(event)"
+              />
+            </a>
+          </label>
+        </div>
+        <nav class="pageNav">
+          <a href="/company" class="underlineNone" id="case1">COMPANY</a>
+          <a href="/business" class="underlineNone" id="case2">BUSINESS</a>
+          <a href="/contact" class="underlineNone active" id="case3">CONTACT</a>
+        </nav>
+      </div>
+    </div>
+    <div class="contactContainer">
+      <div class="contactWrapper">
+        <div class="address">
+          <div class="addressInfo">
+            <div class="addressTitle">contact us</div>
+            <table>
+              <tbody>
+                <tr>
+                  <th>전 화</th>
+                  <td>070.8777.9224</td>
+                </tr>
+                <tr>
+                  <th>팩 스</th>
+                  <td>062.443.3001</td>
+                </tr>
+                <tr>
+                  <th>E-mail</th>
+                  <td>seun80@hanmail.net</td>
+                </tr>
+                <tr>
+                  <th>주 소</th>
+                  <td>
+                    광주광역시 북구 첨단과기로 208번길 43-10,
+                    <br />마루힐아이비씨지식산업센터 407호(오룡동)
+                  </td>
+                </tr>
+                <tr>
+                  <th>법무</th>
+                  <td>
+                    법무법인 빛고을 (전남 목포시 옥암동 1202-1
+                    <br />에메랄드법조빌딩 307호)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="kakaoMap">
+          <div id="myMap" class="kakaoMap1"></div>
+        </div>
+      </div>
+      <!-- 두 번째 소개 -->
+      <div class="companyInfoTitle2">ABOUT US</div>
+      <div class="companyInfo2">
+        <div class="companyInfoText2">
+          <table>
+            <tbody>
+              <tr>
+                <th style="padding-bottom: 40px">업태</th>
+                <td style="padding-bottom: 40px">
+                  정보통신업 제조업 도매 및 소매업 전문
+                  <br />
+                  과학 및 기술서비스업
+                </td>
+              </tr>
+              <tr>
+                <th style="padding-bottom: 40px">업종</th>
+                <td style="padding-bottom: 40px">
+                  응용소프트웨어 개발 및 공급업
+                  <br />
+                  산업용 로봇 제조업
+                  <br />
+                  전자상거래 소매업, 기타 엔지니어링 서비스업
+                </td>
+              </tr>
+              <tr>
+                <th>조직</th>
+                <td>
+                  개발1팀(AI/Robotics)
+                  <br />
+                  개발2팀(Unmanned Stores)
+                  <br />
+                  개발3팀(Renewable Energy)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="hr2">
+          <hr />
+        </div>
+        <div class="companyInfoText3">
+          <table>
+            <tbody>
+              <tr>
+                <th>플랫폼</th>
+                <td>
+                  <b>AI</b> (PYTHON, TENSORFLOW, FLASK, DJANGO, PYTORCH)
+                  <br />
+                  <b>WEB</b> (JAVA, SPRING BOOT, INTELLIJ IDEA, REACT JS, Node
+                  JS, Vue JS, KOTLIN)
+                  <br />
+                  <b>APP</b> (IOS_XCODE, ANDROID_ANDROIDSTUDIO)
+                  <br />
+                  <b>CLOUD</b> (AMAZON_AWS, NHN_TOAST)
+                  <br />
+                  <b>DATABASE</b> (MYSQL)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey={{ kakao_map_api_key }}"
+    ></script>
+
+    <script src="static/js/contact.js"></script>
+  </body>
+</html>

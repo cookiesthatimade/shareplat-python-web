@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="static/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>쉐어플랫(SHARE PLAT)</title>
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/nav.css" />
+    <!-- 웹 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id='wrapper'>
+    <div class="headerContainer">
+      <div class="headerWrapper">
+        <div class="logo">
+          <label>
+            <a href="/" class="underlineNone" id="case0">
+              <img
+                src="{{ url_for('static', filename='img/logo.png') }}"
+                alt="로고이미지"
+                onclick="GetClick(event)"
+              />
+            </a>
+          </label>
+        </div>
+
+        <nav class="pageNav">
+          <a href="/company" class="underlineNone" id="case1">COMPANY</a>
+          <a href="/business" class="underlineNone" id="case2">BUSINESS</a>
+          <a href="/contact" class="underlineNone" id="case3">CONTACT</a>
+        </nav>
+      </div>
+    </div>
+    <div class="introContainer">
+      <!-- intro -->
+      <section class="intro">
+        <div class="intro__dark">
+          <div class="intro__type">
+            <div>
+              <span aria-hidden="true">SHARE🚀PLAT은</span>
+            </div>
+            <div>
+              창의적인 미래를 선도합니다
+              <span class="underscore">_</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro__tilt"></div>
+        <div class="intro__tilt--flip"></div>
+      </section>
+
+      <div class="buttonBox">
+        <button class="btn-10" onclick="location.href='/pages/contact'">
+          문의하기
+        </button>
+      </div>
+
+      <!-- banner -->
+<div class="bannerContainer">
+  <div class="workWtihTitle">WE WORK WITH</div>
+  <div class="bannerWrapper">
+    <div class="marquee">
+      <div class="marquee--inner">
+        <span class="span1">
+          <div class="orb">
+            <img src="static/img/s1.png" alt="1">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2.png" alt="2">
+          </div>
+          <div class="orb">
+            <img src="static/img/s3.png" alt="3">
+          </div>
+          <div class="orb">
+            <img src="static/img/s4.png" alt="4">
+          </div>
+          <div class="orb">
+            <img src="static/img/s5.png" alt="5">
+          </div>
+          <div class="orb">
+            <img src="static/img/s6.png" alt="6">
+          </div>
+          <div class="orb">
+            <img src="static/img/s7.png" alt="7">
+          </div>
+          <div class="orb">
+            <img src="static/img/s8.png" alt="8">
+          </div>
+          <div class="orb">
+            <img src="static/img/s1.png" alt="1">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2.png" alt="2">
+          </div>
+          <div class="orb">
+            <img src="static/img/s3.png" alt="3">
+          </div>
+          <div class="orb">
+            <img src="static/img/s4.png" alt="4">
+          </div>
+          <div class="orb">
+            <img src="static/img/s5.png" alt="5">
+          </div>
+        </span>
+      </div>
+    </div>
+    <div class="marquee">
+      <div class="marquee--inner2">
+        <span class="span1">
+          <div class="orb">
+            <img src="static/img/s2-1.png" alt="21">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2-2.png" alt="22">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2-3.png" alt="23">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2-4.png" alt="24">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2-1.png" alt="21">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2-2.png" alt="22">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2-3.png" alt="23">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2-4.png" alt="24">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2-1.png" alt="21">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2-2.png" alt="22">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2-3.png" alt="23">
+          </div>
+          <div class="orb">
+            <img src="static/img/s2-4.png" alt="24">
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <!--footer-->
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://factorysunny.com"
+      class="goSunny"
+    >
+      <div class='footer'>&nbsp; Powered by SharePlat &nbsp;</div>
+    </a>
+
+    <script src="static/js/index.js"></script>
+  </body>
+</html>

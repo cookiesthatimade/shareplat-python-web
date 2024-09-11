@@ -1,0 +1,98 @@
+<!-- business.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="static/img/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>쉐어플랫(SHARE PLAT)</title>
+        <link rel="stylesheet" href="static/css/business.css" />
+        <link rel="stylesheet" href="static/css/nav.css" />
+        <!-- 웹 폰트 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
+          rel="stylesheet"
+        />
+    </head>
+<body>
+    <div class="headerContainer">
+        <div class="headerWrapper">
+            <div class="logo">
+                <label>
+                    <a href="/" class="underlineNone" id="case0" onclick="GetClick(event)">
+                        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="로고이미지">
+                    </a>
+                </label>
+            </div>
+
+            <nav class="pageNav">
+                <a href="/company" class="underlineNone" id="case1">COMPANY</a>
+                <a href="/business" class="underlineNone active" id="case2">BUSINESS</a>
+                <a href="/contact" class="underlineNone" id="case3">CONTACT</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="businessContainer">
+        <div class="businessPhoto">
+            <div class="photoCard">
+                <img src="{{ url_for('static', filename='img/b1.png') }}" alt="인공지능">
+                <div class="cardTitle">인공지능(AI)</div>
+                <div class="cardText">
+                    <p>
+                        <b>[AI VISION] 인공지능 비전</b>
+                        <br>
+                        인공지능 비전 기반 ”투입 및 선별 로봇을 활용한 데이터 증강 및
+                        결함 탐지 시스템”
+                    </p>
+                    <p>
+                        <b>[AI Mathematics] 인공지능 수학</b>
+                        <br>
+                        인공지능 기반 ”수학문제 관련개념 추천 및 제시 시스템”
+                    </p>
+                </div>
+            </div>
+            <div class="photoCard">
+                <img src="{{ url_for('static', filename='img/b2.jpg') }}" alt="로봇">
+                <div class="cardTitle">로보틱스(Robotics)</div>
+                <div class="cardText">
+                    <p>
+                        <b>[AI BEMS] 인공지능 스마트건물 플랫폼</b>
+                        <br>
+                        인공지능 기반, "무인로봇을 활용한 <br>저탄소 스마트건물 플랫폼”
+                    </p>
+                </div>
+            </div>
+            <div class="photoCard">
+                <img src="{{ url_for('static', filename='img/b3.jpeg') }}" alt="무인매장">
+                <div class="cardTitle">무인매장(Unmanned Stores)</div>
+                <div class="cardText">
+                    <p>
+                        <b>[AI Fashion] 인공지능 기반 무인매장</b>
+                        <br>
+                        "인공지능 비전 기반 무인로봇을 활용한 의류 매장 키오스크(KIOSK)
+                        시스템"
+                    </p>
+                </div>
+            </div>
+            <div class="photoCard">
+                <img src="{{ url_for('static', filename='img/b4.jpg') }}" alt="신재생에너지">
+                <div class="cardTitle">신재생에너지(Renewable Energy)</div>
+                <div class="cardText">
+                    <p>
+                        <b>
+                            [AI SOLAR/SunnyEPIS] <br>
+                            인공지능 파워(Electronic Power Information System)
+                        </b>
+                        <br>
+                        인공지능 기반 ”태양광 발전량 예측 및 <br>이상치 탐지 전력정보 모니터링 시스템”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

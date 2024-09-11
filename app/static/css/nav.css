@@ -1,0 +1,104 @@
+.headerContainer {
+  width: 100vw;
+  height: 8vh;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.headerWrapper {
+  margin-top: 65px;
+  display: flex;
+  gap: 10%;
+  justify-content: space-evenly;
+}
+
+.logo {
+  margin-top: -70px;
+  margin-left: -100px;
+}
+
+.logo img {
+  width: 250px;
+  margin-top: 40px;
+}
+
+.underlineNone {
+  text-decoration: none;
+  font-size: 30px;
+  color: #67686c;
+  font-weight: bold;
+}
+
+.pageNav {
+  display: flex;
+  gap: 20%;
+  justify-content: space-around;
+}
+
+.active {
+  color: lightgray; /* 클릭된 요소의 텍스트 색상을 회색으로 변경 */
+}
+
+@media (900px<=width<1536px) {
+  .logo img {
+    width: 200px;
+  }
+
+  .underlineNone {
+    font-size: 25px;
+  }
+}
+
+/* 모바일 가로모드 */
+@media (600px<=width<900px) {
+  .headerWrapper {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: 4%;
+    margin-top: -90px;
+  }
+
+  .logo img {
+    width: 130px;
+    margin-bottom: 15px;
+  }
+
+  .underlineNone {
+    font-size: 18px;
+  }
+
+  .pageNav {
+    gap: 10%;
+    justify-content: center;
+  }
+}
+
+@media (300px<=width<600px) {
+  .headerWrapper {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: 4%;
+    margin-top: -80px;
+  }
+
+  .logo img {
+    width: 130px;
+    margin-bottom: 15px;
+  }
+
+  .underlineNone {
+    font-size: 15px;
+  }
+
+  .pageNav {
+    gap: 10%;
+    justify-content: center;
+  }
+}

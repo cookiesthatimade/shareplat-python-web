@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.contactContainer {
+  height: 130vh;
+  width: 100vw;
+}
+
+.contactWrapper {
+  margin-top: 6%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.address {
+  margin-top: 30px;
+}
+
+.addressInfo {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  padding-left: 36%;
+  padding-right: 12%;
+}
+
+.addressTitle {
+  font-size: 34px;
+  margin-bottom: 50px;
+  font-weight: 600;
+  text-align: center;
+  color: gray;
+}
+
+.addressInfo td {
+  line-height: 45px;
+}
+
+.addressInfo th {
+  width: 100px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* kakaoMap */
+.kakaoMap {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+/* about us */
+.companyInfoTitle2 {
+  margin-top: 7%;
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
+  color: gray;
+  padding-bottom: 10px;
+}
+
+.companyInfo2 {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 49.8% 1px 50%;
+  justify-items: center;
+}
+
+.hr2 hr {
+  height: 100%;
+  border-color: rgba(128, 128, 128, 0.353);
+}
+
+.companyInfoText2,
+.companyInfoText3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+}
+
+.companyInfoText2 td {
+  line-height: 45px;
+}
+
+.companyInfoText3 td {
+  line-height: 80px;
+}
+
+.companyInfoText3 td b{
+  padding-bottom: 20px;
+}
+
+.companyInfoText2 th {
+  width: 100px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.companyInfoText3 th {
+  width: 130px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.companyInfoText2 {
+  margin-left: 20%;
+}
+
+.companyInfoText3 {
+  margin-right: 10%;
+}
+
+/* 태블릿용 */
+@media (900px<width<1536px) {
+  .contactContainer {
+    height: 150vh;
+  }
+  .address {
+    margin-top: 8px;
+  }
+  .addressInfo {
+    font-size: 18px;
+    padding-left: 30%;
+  }
+
+  .addressTitle {
+    font-size: 30px;
+  }
+
+  .companyInfoTitle2 {
+    font-size: 30px;
+  }
+
+  .companyInfoText2,
+  .companyInfoText3 {
+    font-size: 18px;
+  }
+  .companyInfoText2,
+  .companyInfoText3 td {
+    line-height: 40px;
+    margin-top: 2%;
+  }
+
+  .companyInfoText2 {
+    margin-left: 15%;
+  }
+
+  .companyInfoText3 {
+    margin-top: 9%;
+    margin-right: 10%;
+  }
+}
+
+/* 가로모드 */
+@media (600px<width<=900px) {
+  .address {
+    margin-top: 10px;
+  }
+
+  .addressInfo {
+    font-size: 15px;
+    padding-left: 10%;
+  }
+
+  .addressInfo td {
+    line-height: 40px;
+  }
+
+  .addressTitle {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .kakaoMap {
+    margin-top: 18%;
+    margin-left: 2%;
+  }
+
+  .companyInfoTitle2 {
+    font-size: 25px;
+  }
+  .companyInfoText2,
+  .companyInfoText3 {
+    font-size: 14px;
+  }
+
+  .companyInfoText2,
+  .companyInfoText3 td {
+    line-height: 25px;
+  }
+
+  .companyInfoText2 th {
+    width: 90px;
+  }
+
+  .companyInfoText3 th {
+    width: 110px;
+  }
+
+  .companyInfoText2 {
+    margin-left: 10px;
+    margin-right: 10%;
+  }
+
+  .companyInfoText3 {
+    margin-top: 40px;
+    margin-right: 10%;
+    margin-bottom: 50px;
+  }
+}
+
+/* 모바일용 */
+@media (300px<=width<=600px) {
+  .contactWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address {
+    margin-top: 5px;
+  }
+
+  .addressInfo {
+    margin-bottom: 30px;
+    font-size: 15px;
+    padding-left: 6%;
+  }
+
+  .addressTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .addressInfo td {
+    line-height: 30px;
+  }
+
+  .kakaoMap {
+    margin-left: 10%;
+  }
+
+  .companyInfoTitle2 {
+    font-size: 24px;
+  }
+
+  .companyInfo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .companyInfoText2,
+  .companyInfoText3 {
+    font-size: 15px;
+  }
+
+  .companyInfoText2,
+  .companyInfoText3 td {
+    line-height: 25px;
+  }
+
+  .companyInfoText2 th {
+    width: 90px;
+  }
+
+  .companyInfoText3 th {
+    width: 110px;
+  }
+
+  .companyInfoText2 {
+    margin-left: 10px;
+    margin-right: 10%;
+  }
+
+  .companyInfoText3 {
+    margin-top: 40px;
+    margin-right: 10%;
+    margin-bottom: 50px;
+  }
+}
+
+
+#myMap {
+  width: 32vw;
+  height: 43vh;
+  border-color: gray;
+  border-style: solid;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  background-color: #248cfa;
+  color: white;
+  border-radius: 20px;
+  padding: 9px;
+}
+
+@media (900px<width<1536px) {
+  .overlay {
+    font-size: 11px;
+  }
+}
+
+@media (600px<width<=900px) {
+  #myMap {
+    width: 40vw;
+    height: 50vh;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+@media (300px<=width<=600px) {
+  #myMap {
+    width: 80vw;
+    height: 30vh;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+

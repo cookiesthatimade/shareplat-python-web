@@ -1,0 +1,100 @@
+<!-- company.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="static/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쉐어플랫(SHARE PLAT)</title>
+    <link rel="stylesheet" href="static/css/company.css" />
+    <link rel="stylesheet" href="static/css/nav.css" />
+    <!-- 웹 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="headerContainer">
+        <div class="headerWrapper">
+            <div class="logo">
+                <label>
+                    <a href="/" class="underlineNone" id="case0" onclick="GetClick(event)">
+                        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="로고이미지">
+                    </a>
+                </label>
+            </div>
+
+            <nav class="pageNav">
+                <a href="/company" class="underlineNone active" id="case1">COMPANY</a>
+                <a href="/business" class="underlineNone" id="case2">BUSINESS</a>
+                <a href="/contact" class="underlineNone" id="case3">CONTACT</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="companyContainer">
+        <div class="companyWrapper">
+            <div class="companyImg">
+                <img src="{{ url_for('static', filename='img/company.png') }}" alt="회사이미지">
+            </div>
+            <div class="companyInfoContainer">
+                <div class="companyInfoTitle">INTRODUCTION</div>
+                <div class="companyInfoText">
+                    <div class="companyInfo">
+                        <p>
+                            <img src="{{ url_for('static', filename='img/o.png') }}" alt="점이미지" />
+                            회사명 : 주식회사 쉐어플랫(SHARE PLAT)
+                        </p>
+                        <p>
+                            <img src="{{ url_for('static', filename='img/o.png') }}" alt="점이미지" />
+                            설립일 : 2023년 01월 05일
+                        </p>
+                        <p>
+                            <img src="{{ url_for('static', filename='img/o.png') }}" alt="점이미지" />
+                            주&nbsp; &nbsp;소 : 광주광역시 북구 첨단과기로 208번길 43-10,
+                        </p>
+                        <p class="companyInfoUnder1">
+                            마루힐아이씨지식산업센터 407호(오룡동)
+                        </p>
+                        <p>
+                            <img src="{{ url_for('static', filename='img/o.png') }}" alt="점이미지" />
+                            주요사업 : 인공지능(AI)
+                        </p>
+                        <p class="companyInfoUnder2"> 
+                            &nbsp;&nbsp;로보틱스(Robotics)
+                        </p>
+                        <p class="companyInfoUnder2">
+                            &nbsp;&nbsp;무인매장(Unmanned stores)
+                        </p>
+                        <p class="companyInfoUnder2">
+                            &nbsp;&nbsp;신재생에너지(Renewable Energy)
+                        </p>
+                    </div>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                    <div class="companyMission">
+                        <p>
+                            저희 "<img src="{{ url_for('static', filename='img/logoLittle.png') }}" alt="회사로고" />" 는 <br>
+                            다양한 프로그램 개발 경험과 창의성, 편의성을 기반으로 인공지능과<br>
+                            결합한 로봇과 무인매장, 신재생에너지 플랫폼을 개발하는 기업입니다.
+                        </p>
+                        <p>
+                            <br>"<b>쉐어플랫은</b>, 우수한 기술 인력과 핵심역량을 기반으로 하여
+                            다양한 AI 프로젝트를 성공적으로 수행하고 있습니다. 자체
+                            AI 솔루션을 기반으로 한, 인공지능 플랫폼 구축에 많은 노하우를
+                            축적하고 있으며 더불어 제조환경 및 에너지 신산업, 일상 소비재,
+                            교육환경에 AI를 접목하여, 보다 더 편리한 혁신 아이템을
+                            지속적으로 공급하는 업체로 발돋움 해 나가고 있습니다."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

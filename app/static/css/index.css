@@ -1,0 +1,373 @@
+#wrapper {
+  height: auto;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.introContainer {
+  width: 100vw;
+  height: 80vh;
+  text-align: center;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.intro {
+  position: relative;
+  margin-top: 30px;
+  background-image: url("../img/code.png");
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.intro__dark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.67);
+}
+
+.intro__type {
+  display: inline-flex;
+  margin-top: 100px;
+  gap: 0.32em;
+  font-family: var(--font-code);
+  font-size: 2.8em;
+  font-weight: bold;
+  color: white;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.intro__type .underscore {
+  animation-name: blink;
+  animation-duration: 350ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Button */
+.buttonBox {
+  margin-top: -4.5%;
+  margin-bottom: 6%;
+}
+
+.btn-10 {
+  width: 130px;
+  font-size: 15px;
+  height: 45px;
+  color: white;
+  border: 2px solid white;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.btn-10:hover {
+  color: whitesmoke;
+  background-color: gray;
+}
+
+/* sponsorBanner */
+.bannerContainer {
+  text-align: center;
+}
+
+.workWtihTitle {
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+  transform: translateY(21px);
+}
+
+.bannerWrapper {
+  margin-left: 28%;
+  margin-right: 28%;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.221);
+  box-sizing: border-box;
+  border-radius: 35px;
+}
+
+/* banner inner 1 */
+
+.span1 {
+  float: left;
+  width: 87%;
+}
+
+.orb {
+  width: 100px;
+  height: 50px;
+  display: block;
+  margin: 0 50px;
+  float: left;
+  transition: all 0.2s ease-out;
+}
+
+.orb:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.orb img {
+  margin-top: 30px;
+  width: 140px;
+  height: 40px;
+}
+
+.marquee {
+  height: 150px;
+  width: 1210px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  margin: 1px auto;
+}
+
+.marquee--inner {
+  display: block;
+  width: 300%;
+  margin: 40px 0;
+  position: absolute;
+  animation: marquee 21s linear infinite;
+  /* 이 속성 없으면 일반 베너 같음
+      animation-direction: alternate; */
+}
+
+.marquee--inner2 {
+  display: block;
+  width: 300%;
+  margin: 40px 0;
+  position: absolute;
+  animation: marquee 20s linear infinite;
+  /* 이 속성 없으면 일반 베너 같음
+      animation-direction: alternate; */
+}
+
+.marquee--inner:hover {
+  animation-play-state: paused;
+}
+.marquee--inner2:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+/* 태블릿용 */
+@media (900px<=width<1536px) {
+  .introContainer {
+    height: 100vh;
+  }
+
+  .intro {
+    height: 38vh;
+  }
+  .buttonBox {
+    margin-bottom: 8%;
+    margin-top: -6%;
+  }
+
+  .bannerContainer {
+    margin-bottom: 50px;
+  }
+}
+
+/* 모바일 가로모드 */
+@media (600px<=width<900px) {
+  .introContainer {
+    height: 100vh;
+  }
+
+  .intro {
+    margin-top: 45px;
+    height: 40vh;
+  }
+
+  .intro__type {
+    font-size: 15px;
+    margin-top: 40px;
+  }
+
+  .buttonBox {
+    margin-top: -9%;
+  }
+
+  .btn-10 {
+    font-size: 12px;
+    height: 35px;
+    width: 100px;
+  }
+
+  .introContainer img {
+    margin-top: 40px;
+  }
+
+  .workWtihTitle {
+    transform: translateY(18px);
+    font-size: 25px !important;
+  }
+
+  .bannerContainer {
+    margin-bottom: 40px;
+  }
+
+  .bannerWrapper {
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+
+  .marquee {
+    height: 140px;
+  }
+
+  .orb {
+    margin: 0 26px;
+    margin-top: -10px;
+  }
+
+  .orb img {
+    width: 120px;
+    height: 30px;
+  }
+}
+
+/* 모바일용 */
+@media (300px<=width<600px) {
+  .introContainer {
+    height: 80vh;
+  }
+
+  .intro {
+    margin-top: 20px;
+    height: 30vh;
+  }
+
+  .intro__type {
+    font-size: 18px;
+    margin-top: 70px;
+  }
+
+  .buttonBox {
+    margin-top: -18%;
+  }
+
+  .btn-10 {
+    font-size: 13px;
+    height: 35px;
+    width: 80px;
+  }
+
+  .introContainer img {
+    margin-top: 50px;
+  }
+
+  .workWtihTitle {
+    transform: translateY(18px);
+    font-size: 25px !important;
+  }
+
+  .bannerContainer {
+    margin-bottom: 40px;
+  }
+
+  .bannerWrapper {
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+
+  .marquee {
+    height: 140px;
+  }
+
+  .orb {
+    margin: 0 26px;
+    margin-top: -10px;
+  }
+
+  .orb img {
+    width: 120px;
+    height: 30px;
+  }
+}
+
+/* footer */
+.footer {
+  display: block;
+  text-align: center;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0.748);
+  font-size: 10px;
+  position: relative;
+}
+
+.goSunny {
+  text-decoration: none;
+}
+
+/* 태블릿용 */
+@media (900px<=width<=1536px) {
+  .footer {
+    margin-top: 10px;
+    font-size: 13px;
+    color: white;
+    background-color: rgba(47, 47, 47, 0.359);
+    bottom: 0;
+  }
+}
+
+/* 가로모드 */
+@media (600px<width<=900px) {
+  .footer {
+    display: none;
+  }
+}
+
+/* 큰화면 */
+@media (1536px<width) {
+  .footer {
+    margin-top: 1.1%;
+    bottom: 0;
+    font-size: 13px;
+    color: white;
+    background-color: rgba(47, 47, 47, 0.359);
+  }
+}
