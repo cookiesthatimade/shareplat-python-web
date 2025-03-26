@@ -1,63 +1,97 @@
-# shareplat python ver.
-### sharePlat_py는 React로 만들어진 sharePlat([원본](https://gitlab.com/sunnyfactory2/shareplat))을 Flask를 사용하여 재구성하였습니다.
-
-</br>
-
-### SKILLS 🚀 
-
-![py](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![html](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white) ![flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-
-</br>
-
-## Installation 📦
+# 🌎 flask-shareplat-web 🌎
 
 
-### sharePlat을 설치하려면 다음과 같은 과정을 참고하세요.
-</br>
 
-### 1. 레포지토리 클론 :
-```
-'https://github.com/sunnyfactory2/shareplat_py'
-```
-</br>
+> shareplat(https://www.shareplat.net/) 웹 사이트
 
-### 2. 가상환경 생성 :
-```
-  python3 -m venv env
-```
-</br>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/1b5d0570-c76c-4459-8658-2a0c12dc8df5"/>
+</p>
 
-### 3. 가상환경 진입 :
-```
-  source env/bin/activate
-```
-</br>
+---
 
-### 4. 패키지 설치 :
-```
-  pip install -r requirements.txt
-```
-</br>
+## 📖 프로젝트 소개
 
-### 5. 로컬 실행 -> Go to localhost:5000
+**flask-shareplat-web**은 shareplat 회사의 웹페이지를 개발하였습니다.
+
+---
+
+## 🎥 데모
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/f8d7a3c3-740f-4410-a2a1-8af5ec1cd6d0" width="800" />
+    <img src="https://github.com/user-attachments/assets/53bf74a8-fc73-4920-a423-aec06f0e18aa" width="800" />
+    <img src="https://github.com/user-attachments/assets/fae8b217-31fe-42ec-8040-6810fc04da02" width="800" />
+    <img src="https://github.com/user-attachments/assets/98be271d-5f70-4353-8ea3-5053a4301540" width="800" />
+    <img src="https://github.com/user-attachments/assets/5cad0907-875d-4e93-8dcb-abfbccd6093c" width="800" />
+</p>
+
+---
+
+## 💻 프로젝트 실행 방법
+
+### 프로젝트 디렉터리 이동
 ```
-  cd/app
-  python3 main.py 
+cd app
 ```
-### 5-1. 서버 실행 ->  Go to www.shareplat.net
-flask 백그라운드 실행 커맨드
+### 가상 환경 생성
 ```
-  sudo nohup python3 main.py &
+python3 -m venv env
 ```
-PID값 확인 커맨드
+### 가상 환경 활성화
 ```
-  ps -ef | grep main.py
+source env/bin/activate
 ```
-백그라운드 종료 커맨드
+### 프로젝트 종속성 설치
 ```
-  sudo kill -9 PID값
+pip install -r requirements.txt
+```
+### 서버 실행
+```
+python3 main.py
+```
+### ➡️ Go to localhost:5000
+
+---
+
+## 🔧 기술 스택
+
+| **분류**            | **기술**                        |
+| ----------------- | ----------------------------- |
+| **언어**            | HTML, CSS, JavaScript, Python |
+| **라이브러리 & 프레임워크** | Flask                         |
+| **데이터베이스**        | MySQL                         |
+| **배포 환경**         | AWS EC2, Docker               |
+| **실행 환경**         | Gunicorn                      |
+
+---
+
+## 📁 프로젝트 구조
+
+```markdown
+src
+├── app
+│   ├── static
+│   ├── templates
+│   ├── main.py
+│   └── my_settings.py (개별 작성 필요)
+├── README.md
+└── requirements.txt
 ```
 
-<br/>
+---
 
-### Reconstructed by Seongha Kim and Seongwook Kim.
+## 👨‍💻 역할 및 기여
+
+| 역할                 | 담당 업무                                                         |
+| ------------------ | ------------------------------------------------------------- |
+| **Frontend (Web)** | HTML, CSS, JavaScript (UI/UX 구현)                              |
+| **Backend (Web)**  | Flask, MySQL                                       |
+| **DevOps**         | AWS EC2, Docker, Gunicorn 배포 및 환경 설정                          |
+| **Etc**             | 보안 설정 (SSL, CORS 등), KAKAO API 활용|
+
+---
+
+## 👨‍👩‍👧‍👦 Developer
+*  **김성하** ([cookiesthatimade](https://github.com/cookiesthatimade))
+*  **김성욱** ([seonguk0893](https://github.com/seonguk0893))
